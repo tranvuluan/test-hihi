@@ -20,25 +20,12 @@ export default async function handler(
     executablePath: await chromium.executablePath,
     headless: chromium.headless,
   });
-  // Create a page with the recommended Open Graph image size
-  const page = await browser.newPage({
-    viewport: {
-      width: 1200,
-      height: 720,
-    },
-  });
+  const page = await browser.newPage();
 
-  // Extract the url from the query parameter `path`
-  const url = "https://ndo.dev/posts/link-screenshot";
+  await page.goto("https://example.com");
 
-  await page.goto(url);
-
-  const data = await page.screenshot({
-    type: "png",
-  });
-
+  // your logic here ...
+  console.info("DONE");
   await browser.close();
-  res.setHeader("Cache-Control", "s-maxage=31536000, public");
-  res.setHeader("Content-Type", "image/png");
-  res.end(data);
+  res.end('ok');
 }

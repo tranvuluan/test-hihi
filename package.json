@@ -7,8 +7,11 @@
   },
   "dependencies": {
     "@defer/client": "^1.11.0",
+    "chrome-aws-lambda": "^10.1.0",
     "next": "latest",
+    "playwright-core": "^1.38.1",
     "puppeteer": "^21.3.6",
+    "puppeteer-core": "^21.3.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "semantic-ui-css": "^2.4.1",

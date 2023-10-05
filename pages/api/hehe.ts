@@ -10,6 +10,7 @@ export const generatePDF = async (url: string, token: string) => {
           args: chrome.args,
           executablePath: await chrome.executablePath,
           headless: chrome.headless,
+          ignoreDefaultArgs: ['--disable-extensions']
         }
       : {}
   );

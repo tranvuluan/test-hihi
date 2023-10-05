@@ -31,13 +31,6 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@defer/client@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@defer/client/-/client-1.11.0.tgz#e740913ff3a0a29818c4fb4141172d62e2dbe3e5"
-  integrity sha512-yAOlEMtcL3LppfTau7gTeYIdpm18y0SIF3FKbl46gk7D69u7ND0N/5y57v3xw8NeDx/7z1XPbE6t/wTw66Rx+g==
-  dependencies:
-    parse-duration "^1.1.0"
-
 "@fluentui/react-component-event-listener@~0.63.0":
   version "0.63.1"
   resolved "https://registry.yarnpkg.com/@fluentui/react-component-event-listener/-/react-component-event-listener-0.63.1.tgz#c2af94893671f1d6bfe2a8a07dcfa2cb01b85f52"
@@ -736,11 +729,6 @@ parent-module@^1.0.0:
   integrity sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==
   dependencies:
     callsites "^3.0.0"
-
-parse-duration@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/parse-duration/-/parse-duration-1.1.0.tgz#5192084c5d8f2a3fd676d04a451dbd2e05a1819c"
-  integrity sha512-z6t9dvSJYaPoQq7quMzdEagSFtpGu+utzHqqxmpVWNNZRIXnvqyCvn9XsTdh7c/w0Bqmdz3RB3YnRaKtpRtEXQ==
 
 parse-json@^5.2.0:
   version "5.2.0"

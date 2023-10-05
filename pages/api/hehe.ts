@@ -7,10 +7,13 @@ export const generatePDF = async (url: string, token: string) => {
   const browser = await puppeteer.launch(
     process.env.NODE_ENV === "production"
       ? {
-          args: chrome.args,
+          args: [
+            "--no-sandbox", // Add this flag to disable the sandbox
+            "--disable-setuid-sandbox",
+          ],
           executablePath: await chrome.executablePath,
           headless: chrome.headless,
-          ignoreDefaultArgs: ['--disable-extensions']
+          ignoreDefaultArgs: ["--disable-extensions"],
         }
       : {}
   );
